@@ -1,0 +1,280 @@
+:root {
+  --text-color: #444444;
+  --black-color: #202020;
+  --bg-color: #fefcef;
+  --border-color: #f0f0f0;
+  --bg-color-main: #fbfbfb;
+  --color-white: #ffffff;
+  --btn-color: #f6f7f8;
+  --caret-color: #808080;
+  --danger-color: #ff0000;
+
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
+  min-height: 100%;
+  margin: 50px 0;
+  background-color: var(--bg-color-main);
+  background-image: url(https://teaboom.ru/static/assets/images/transp_patttern.png?a76bebbb36d7&4cd942394a99);
+
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--black-color);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.page-title {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: bold;
+}
+
+.product-card {
+  margin: 40px 0;
+  display: flex;
+  gap: 40px;
+}
+
+.product-card__images {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-card__image {
+  max-width: 420px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-card__images-list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.product-card__images-item {
+  max-width: 133px;
+  object-fit: contain;
+  opacity: 60%;
+  transition: opacity 0.2s ease-in;
+}
+
+.isActive {
+  border: 3px solid var(--bg-color);
+  box-sizing: content-box;
+}
+
+.product-card__images-item:hover {
+  opacity: 1;
+}
+
+.product-card__images-btn {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.product-card__images-img {
+  width: 100%;
+}
+
+.product-card__packages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-card__btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--btn-color);
+  border: 1px solid var(--border-color);
+  padding: 0px 15px;
+  color: var(--text-color);
+
+  width: 420px;
+  height: 44px;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.product-card__btn:hover {
+  background-color: var(--color-white);
+  box-shadow: 0 3px 10px rgb(32 32 32 / 10%);
+  transform: translateY(-1px);
+}
+
+.product-card__package-details,
+.product-card__prices,
+.product-card__stock {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  line-height: 16px;
+}
+
+.product-card__package-details {
+  flex: 1;
+}
+
+.product-card__package-purchase {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-card__weight {
+  font-weight: 600;
+}
+
+.product-card__stock {
+  line-height: 14px;
+}
+
+.product-card__sku,
+.product-card__stock-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--caret-color);
+}
+
+.product-card__prices {
+  align-items: end;
+}
+
+.product-card__discount-price {
+  font-size: 18px;
+  color: var(--danger-color);
+}
+
+.product-card__price {
+  font-size: 13px;
+  color: var(--caret-color);
+  font-weight: 600;
+}
+
+.product-card__stock-count {
+  font-size: 12px;
+  color: var(--danger-color);
+  font-weight: 600;
+}
+
+.add-to-cart-btn {
+  background-color: #e9f2c3;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card__btn-image {
+  width: 18px;
+}
+
+.product-description__title-wrapper {
+  background-color: var(--black-color);
+  padding: 25px 0;
+}
+
+.product-description__title {
+  color: var(--color-white);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.product-description__content {
+  padding: 50px 85px;
+  background-color: var(--bg-color);
+  border: solid 1px var(--border-color);
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.product-description__section-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.product-description__benefits {
+  list-style: disc;
+  padding-left: 20px;
+}
