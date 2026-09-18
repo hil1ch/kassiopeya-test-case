@@ -80,8 +80,8 @@ h6 {
 }
 
 .container {
+  width: min(1200px, calc(100% - 30px));
   max-width: 1200px;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -323,4 +323,93 @@ h6 {
 .product-description__benefits {
   list-style: disc;
   padding-left: 20px;
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 16px 0px;
+  }
+
+  .page__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .product-card__package-button {
+    padding: 0 10px;
+  }
+
+  .product-card__package-purchase {
+    gap: 8px;
+  }
+
+  .product-card__discount-price {
+    font-size: 16px;
+  }
+
+  .product-card__stock {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .page__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .product-card {
+    display: block;
+  }
+
+  .product-card__images-list {
+    flex-wrap: wrap;
+  }
+
+  .product-card__package-button {
+    min-width: 0;
+  }
+
+  .product-description__section-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    margin: 24px 16px;
+  }
+
+  .container {
+    width: min(1200px, calc(100% - 16px));
+  }
+
+  .product-card {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .product-card__images,
+  .product-card__info,
+  .product-card__packages,
+  .product-card__package {
+    width: 100%;
+  }
+
+  .product-card__image {
+    max-width: 100%;
+  }
+
+  .product-card__package-button {
+    width: min(420px, 100%);
+  }
+
+  .product-description__content {
+    padding: 20px;
+  }
 }
