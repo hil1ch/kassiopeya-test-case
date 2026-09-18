@@ -33,14 +33,16 @@
         <h1 class="page__title">Ананасовый улун</h1>
         <article class="product-card">
           <div class="product-card__images">
-            <img
-              class="product-card__image"
-              src="./public/product.jpg"
-              alt="Ананасовый улун"
-            />
+            <button class="product-card__image-button" type="button">
+              <img
+                class="product-card__image"
+                src="./public/product.jpg"
+                alt="Ананасовый улун"
+              />
+            </button>
             <ul class="product-card__images-list">
               <li
-                class="product-card__images-item product-card__images-item--active"
+                class="product-card__images-item"
               >
                 <button class="product-card__images-btn" type="button">
                   <img
@@ -206,5 +208,23 @@
         </section>
       </div>
     </main>
+    <dialog class="product-modal">
+      <div class="product-modal__content">
+        <h2 class="product-modal__title">Ананасовый улун</h2>
+        <button
+          class="product-modal__close"
+          type="button"
+          aria-label="Закрыть изображение"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <img
+          class="product-modal__image"
+          src="./public/product.jpg"
+          alt="Ананасовый улун"
+        />
+      </div>
+    </dialog>
+    <script src="main.js"></script>
   </body>
 </html>
