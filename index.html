@@ -30,7 +30,7 @@
           <span aria-hidden="true"> - </span>
           <a href="#">Ананасовый улун</a>
         </nav>
-        <h1 class="page-title">Ананасовый улун</h1>
+        <h1 class="page__title">Ананасовый улун</h1>
         <article class="product-card">
           <div class="product-card__images">
             <img
@@ -39,8 +39,10 @@
               alt="Ананасовый улун"
             />
             <ul class="product-card__images-list">
-              <li class="product-card__images-item isActive">
-                <button class="product-card__images-btn">
+              <li
+                class="product-card__images-item product-card__images-item--active"
+              >
+                <button class="product-card__images-btn" type="button">
                   <img
                     class="product-card__images-img"
                     src="./public/product.jpg"
@@ -53,103 +55,111 @@
           <div class="product-card__info">
             <ul class="product-card__packages">
               <li class="product-card__package">
-                <button class="product-card__btn" type="button">
-                  <div class="product-card__package-details">
-                    <span class="product-card__weight">100г</span>
+                <button class="product-card__package-button" type="button">
+                  <span class="product-card__package-details">
+                    <span class="product-card__weight">100 г</span>
                     <span class="product-card__sku">арт: 01306</span>
-                  </div>
-                  <div class="product-card__package-purchase">
-                    <div class="product-card__prices">
-                      <b class="product-card__discount-price">326.40 ₽</b>
+                  </span>
+                  <span class="product-card__package-purchase">
+                    <span class="product-card__prices">
+                      <strong class="product-card__discount-price"
+                        >326.40 ₽</strong
+                      >
                       <s class="product-card__price">349.20 ₽</s>
-                    </div>
-                    <div class="add-to-cart-btn">
+                    </span>
+                    <span class="product-card__add-to-cart">
                       <img
-                        class="product-card__btn-image"
+                        class="product-card__cart-icon"
                         src="./public/cart-shopping.svg"
                         alt="Иконка корзины"
                       />
-                    </div>
-                    <div class="product-card__stock">
+                    </span>
+                    <span class="product-card__stock">
                       <span class="product-card__stock-label">наличие:</span>
                       <span class="product-card__stock-count">Много</span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </li>
               <li class="product-card__package">
-                <button class="product-card__btn" type="button">
-                  <div class="product-card__package-details">
-                    <span class="product-card__weight">100г</span>
-                    <span class="product-card__sku">арт: 01306</span>
-                  </div>
-                  <div class="product-card__package-purchase">
-                    <div class="product-card__prices">
-                      <b class="product-card__discount-price">326.40 ₽</b>
-                      <s class="product-card__price">349.20 ₽</s>
-                    </div>
-                    <div class="add-to-cart-btn">
+                <button class="product-card__package-button" type="button">
+                  <span class="product-card__package-details">
+                    <span class="product-card__weight">500 г</span>
+                    <span class="product-card__sku">арт: 01307</span>
+                  </span>
+                  <span class="product-card__package-purchase">
+                    <span class="product-card__prices">
+                      <strong class="product-card__discount-price"
+                        >1 432.00 ₽</strong
+                      >
+                      <s class="product-card__price">1 646.00 ₽</s>
+                    </span>
+                    <span class="product-card__add-to-cart">
                       <img
-                        class="product-card__btn-image"
+                        class="product-card__cart-icon"
                         src="./public/cart-shopping.svg"
                         alt="Иконка корзины"
                       />
-                    </div>
-                    <div class="product-card__stock">
+                    </span>
+                    <span class="product-card__stock">
                       <span class="product-card__stock-label">наличие:</span>
                       <span class="product-card__stock-count">Много</span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </li>
               <li class="product-card__package">
-                <button class="product-card__btn" type="button">
-                  <div class="product-card__package-details">
-                    <span class="product-card__weight">100г</span>
-                    <span class="product-card__sku">арт: 01306</span>
-                  </div>
-                  <div class="product-card__package-purchase">
-                    <div class="product-card__prices">
-                      <b class="product-card__discount-price">326.40 ₽</b>
-                      <s class="product-card__price">349.20 ₽</s>
-                    </div>
-                    <div class="add-to-cart-btn">
+                <button class="product-card__package-button" type="button">
+                  <span class="product-card__package-details">
+                    <span class="product-card__weight">1000 г</span>
+                    <span class="product-card__sku">арт: 01308</span>
+                  </span>
+                  <span class="product-card__package-purchase">
+                    <span class="product-card__prices">
+                      <strong class="product-card__discount-price"
+                        >2 064.00 ₽</strong
+                      >
+                      <s class="product-card__price">2 592.00 ₽</s>
+                    </span>
+                    <span class="product-card__add-to-cart">
                       <img
-                        class="product-card__btn-image"
+                        class="product-card__cart-icon"
                         src="./public/cart-shopping.svg"
                         alt="Иконка корзины"
                       />
-                    </div>
-                    <div class="product-card__stock">
+                    </span>
+                    <span class="product-card__stock">
                       <span class="product-card__stock-label">наличие:</span>
                       <span class="product-card__stock-count">Много</span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </li>
               <li class="product-card__package">
-                <button class="product-card__btn" type="button">
-                  <div class="product-card__package-details">
-                    <span class="product-card__weight">100г</span>
-                    <span class="product-card__sku">арт: 01306</span>
-                  </div>
-                  <div class="product-card__package-purchase">
-                    <div class="product-card__prices">
-                      <b class="product-card__discount-price">326.40 ₽</b>
-                      <s class="product-card__price">349.20 ₽</s>
-                    </div>
-                    <div class="add-to-cart-btn">
+                <button class="product-card__package-button" type="button">
+                  <span class="product-card__package-details">
+                    <span class="product-card__weight">5000 г</span>
+                    <span class="product-card__sku">арт: 01309</span>
+                  </span>
+                  <span class="product-card__package-purchase">
+                    <span class="product-card__prices">
+                      <strong class="product-card__discount-price"
+                        >6 320.00 ₽</strong
+                      >
+                      <s class="product-card__price">8 710.00 ₽</s>
+                    </span>
+                    <span class="product-card__add-to-cart">
                       <img
-                        class="product-card__btn-image"
+                        class="product-card__cart-icon"
                         src="./public/cart-shopping.svg"
                         alt="Иконка корзины"
                       />
-                    </div>
-                    <div class="product-card__stock">
+                    </span>
+                    <span class="product-card__stock">
                       <span class="product-card__stock-label">наличие:</span>
                       <span class="product-card__stock-count">Много</span>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </button>
               </li>
             </ul>
